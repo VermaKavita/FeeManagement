@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form Submission</title>
+<style>
+div {
+	background-color: transparent;
+	border: 1px;
+	margin-left: 37%;
+}
+
+label {
+	font-weight: 600;
+	color: #666;
+}
+
+body {
+	background: #f1f1f1;
+}
+</style>
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+</head>
+<body bgcolor="lightgray">
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+
+	<div class="container mt-3">
+		<form action="Addacc" method="post">
+			<div class="row jumbotron box8">
+				<div class="col-sm-12 mx-t3 mb-4">
+					<h2 class="text-center text-info">Register</h2>
+				</div>
+				<div class="col-sm-6 form-group">
+					<label for="name-f">First Name</label> <input type="text"
+						class="form-control" name="fname"
+						placeholder="Enter your first name." required>
+				</div>
+				<div class="col-sm-6 form-group">
+					<label for="name-l">Last name</label> <input type="text"
+						class="form-control" name="lname"
+						placeholder="Enter your last name." required>
+				</div>
+				<div class="col-sm-6 form-group">
+					<label for="email">Email</label> <input type="email"
+						class="form-control" name="email" placeholder="Enter your email."
+						required>
+				</div>
+				<div class="col-sm-6 form-group">
+					<label for="pwd">Password</label> <input type="password"
+						class="form-control" name="pwd" placeholder="Enter your password."
+						required>
+				</div>
+				<div class="col-sm-6 form-group">
+					<label for="Date">Date Of Birth</label> <input type="Date"
+						name="dob" class="form-control">
+				</div>
+				<div class="col-sm-6 form-group">
+					<label for="sex">Gender</label> <select name="gender"
+						class="form-control browser-default custom-select">
+						<option name="gender" value="M">Male</option>
+						<option name="gender" value="F">Female</option>
+						<option value="O">Unspecified</option>
+					</select>
+				</div>
+				<div class="col-sm-6 form-group">
+					<label for="Qualification">Qualification</label> <select
+						name="quali" class="form-control">
+						<option value="">Select form these</option>
+						<option name="quali" value="BCA">BCA</option>
+						<option name="quali" value="BSC">BSC</option>
+						<option name="quali" value="BCOM">BCOM</option>
+						<option name="quali" value="MSC">MSC</option>
+						<option name="quali" value="MCA">MCA</option>
+						<option name="quali" value="MSC">MSC</option>
+						<option name="quali" value="heigher secondary">Heigher
+							Secondary</option>
+						<option name="quali" value="high school">High school</option>
+						<option name="quali" value="mtech">M.Tech</option>
+					</select>
+				</div>
+				<div class="col-sm-6 form-group">
+					<label for="Designstion">Designation</label> <select name="design"
+						class="form-control">
+						<option value="">Select form these</option>
+						<option name="design" value="Accountant">Accountant</option>
+						<option name="design" value="Teacher">Teacher</option>
+						<option name="design" value="Staff">Staff</option>
+					</select>
+				</div>
+				<div class="col-sm-12">
+					<input type="checkbox" class="form-check d-inline" required><label
+						for="chb" class="form-check-label">I accept all terms and
+						conditions. </label>
+				</div>
+
+				<div class="col-sm-12 form-group mb-0">
+					<button class="btn btn-primary float-right">Submit</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

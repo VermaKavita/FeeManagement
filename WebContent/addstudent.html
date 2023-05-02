@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Student form</title>
+<style>
+.div {
+	width: 800px;
+	margin-top: 15px;
+	margin-left: 300px;
+	padding: 30px;
+	background-color: #5E9DDB;
+}
+
+div {
+	padding: 50px;
+}
+
+table {
+	width: 600px;
+	padding: 30px;
+	align: center;
+}
+</style>
+
+</head>
+<body>
+
+	<div class="div">
+		<h1 align="center">FORM</h1>
+		<form action="Addstu" method="post">
+			<fieldset>
+				<legend>Student form</legend>
+				<table>
+					<tr>
+						<td>Name : *</td>
+						<td><input type="text" name="sname" placeholder="First name"
+							autofocus required /></td>
+					</tr>
+					<tr>
+						<td>Id :*</td>
+						<td><input type="text" name="id" required /></td>
+					</tr>
+					<tr>
+						<td>Father Name :*</td>
+						<td><input type="text" name="fname" placeholder="First name">
+						</td>
+					</tr>
+					<tr>
+						<td>Mother Name :*</td>
+						<td><input type="text" name="mname" placeholder="First name" /></td>
+					</tr>
+					<tr>
+						<td>Email :*</td>
+						<td><input type="email" name="mail"
+							placeholder="Example@gmail.com" required></td>
+					</tr>
+					<tr>
+						<td>Password:*</td>
+						<td><input type="password" name="pwd" required></td>
+					</tr>
+					<tr>
+						<td>Fees</td>
+						<td><input type="radio" name="fee" value="Y" required><label
+							for="fee">Fee</label><input type="radio" name="fee" value="N"
+							required> <label for="Female">Due Fee</label></td>
+					</tr>
+					<tr>
+						<td>DOB :*</td>
+						<td><input type="date" name="dob" value="dob"></td>
+					</tr>
+					<tr>
+						<td>Contact</td>
+						<td><input type="text" name="contact" max-length=10 min-length=10></td>
+					</tr>
+				</table>
+				<input type="checkbox" required> I agree to fill my
+				details.All information given by me is correct.<br />
+				<br /> <input type="submit" value="Register" name="submit" />
+			</fieldset>
+		</form>
+	</div>
+
+</body>
+</html>
